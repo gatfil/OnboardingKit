@@ -29,7 +29,7 @@ struct OnboardingView: View {
                 .opacity(isAnimating ? 1 : 0)
         }
         .onAppear {
-            withAnimation(.easeInOut(duration: 0.8).delay(0.5)) {
+            withAnimation(.easeInOut(duration: 0.8).delay(0.75)) {
                 isAnimating = true
             }
         }
