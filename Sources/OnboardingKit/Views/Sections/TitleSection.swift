@@ -22,7 +22,8 @@ struct TitleSection: View {
                     .clipShape(.rect(cornerRadius: 10))
                     .padding(.bottom)
             }
-            Text("Benvenuto")
+            let saluto = onboardingProvider.configuration.lang == 'it' ? 'Benvenuto' : 'Welcome'
+            Text(saluto)
                 .foregroundColor(.primary)
                 .fontWeight(.semibold)
             Text(Bundle.main.displayName)
