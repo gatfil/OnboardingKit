@@ -11,19 +11,19 @@ public struct OnboardingConfiguration {
     let accentColor: Color
     let lang: String
     let features: [FeatureInfo]
-    let OnboardingData: OnboardingInfo
+    let onboardingData: OnboardingInfo
     let titleSectionAlignment: HorizontalAlignment
 
     public init(privacyUrlString: String,
                 accentColor: Color = .blue,
                 lang: String = "en",
                 features: [FeatureInfo], 
-                OnboardingData: OnboardingInfo,
+                onboardingData: OnboardingInfo,
                 titleSectionAlignment: HorizontalAlignment = .leading) {
         self.privacyUrlString = privacyUrlString
         self.accentColor = accentColor
         self.features = features
-        self.OnboardingData = OnboardingData
+        self.onboardingData = onboardingData
         self.titleSectionAlignment = titleSectionAlignment
         self.lang = lang
     }
@@ -40,7 +40,7 @@ public extension OnboardingConfiguration {
                                            .init(image: Image(systemName: "shippingbox"),
                                                  title: "Track your deliveries.",
                                                  content: "Get real-time updates on orders, all the way from your shopping bag to your home.")],
-                                OnboardingData: .init(title: "Welcome",
+                                onboardingData: .init(title: "Welcome",
                                                       boxTitle: "Continue")
     )
 }
