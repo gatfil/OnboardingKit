@@ -11,9 +11,11 @@ public struct OnboardingConfiguration {
     let accentColor: Color
     let features: [FeatureInfo]
     let titleSectionAlignment: HorizontalAlignment
+    let lang: String
 
     public init(privacyUrlString: String,
                 accentColor: Color = .blue,
+                lang: String = "en"
                 features: [FeatureInfo], 
                 titleSectionAlignment: HorizontalAlignment = .leading) {
         self.privacyUrlString = privacyUrlString
