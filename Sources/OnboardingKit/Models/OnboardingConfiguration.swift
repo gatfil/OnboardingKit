@@ -9,9 +9,9 @@ import SwiftUI
 public struct OnboardingConfiguration {
     let privacyUrlString: String
     let accentColor: Color
+    let lang: String
     let features: [FeatureInfo]
     let titleSectionAlignment: HorizontalAlignment
-    let lang: String
 
     public init(privacyUrlString: String,
                 accentColor: Color = .blue,
@@ -22,6 +22,7 @@ public struct OnboardingConfiguration {
         self.accentColor = accentColor
         self.features = features
         self.titleSectionAlignment = titleSectionAlignment
+        self.lang = lang
     }
 }
 
