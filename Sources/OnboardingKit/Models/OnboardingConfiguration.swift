@@ -14,7 +14,7 @@ public struct OnboardingConfiguration {
     let onboardingData: OnboardingInfo
     let titleSectionAlignment: HorizontalAlignment
 
-    public init(privacyUrlString: String,
+    public init(privacyUrlString: String = "",
                 accentColor: Color = .blue,
                 lang: String = "en",
                 features: [FeatureInfo], 
