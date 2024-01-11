@@ -46,7 +46,7 @@ struct BottomSection: View {
                 }
             }
 
-            Button("Continue") {
+            Button(onboardingProvider.configuration.onboardingData.boxTitle) {
                 onboardingProvider.completeOnboarding()
             }
             .buttonStyle(PrimaryButtonStyle())
